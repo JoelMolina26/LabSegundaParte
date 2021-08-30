@@ -8,5 +8,8 @@ namespace LabSegundaParte.Negocio
 {
     class NClsPersona
     {
+        
+
+
     }
 }
