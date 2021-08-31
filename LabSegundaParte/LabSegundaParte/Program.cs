@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LabSegundaParte.Entidades;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,7 +16,7 @@ namespace LabSegundaParte
             Console.WriteLine("Escribe tu edad");
             int edad = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Ingrese su sexo");
-            string sexo = Console.ReadLine();
+            string sexo = Console.ReadLine();     
             Console.WriteLine("Ingrese su peso");
             double peso = Convert.ToDouble(Console.ReadLine());
             Console.WriteLine("Ingresa tu altura");
