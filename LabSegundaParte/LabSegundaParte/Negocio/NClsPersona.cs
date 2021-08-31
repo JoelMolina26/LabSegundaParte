@@ -1,44 +1,40 @@
 ﻿using LabSegundaParte.Entidades;
 using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace LabSegundaParte.Negocio
 {
-    public class NClsPersona
-
+    class NClsPersona
     {
-        ClsPersona per = new ClsPersona(0, 0);
-        public string CalcularIMc()
+
+        public string calcularIMc(ClsPersona constructor)
         {
+            double pro;
+            pro = (constructor.Peso / Math.Pow(constructor.Altura, 2));
 
-            double pro = per.Peso / Math.Pow(per.Altura, 2);
-            if (pro < 20)
+            if (pro <= 20)
             {
-                return "peso es ideal";
-
-
+                return "Peso ideal";
             }
-            if (pro > 25)
+            if (pro >=21)
             {
-                return "tiene sobre peso";
+                return "Tienen sobre peso";
             }
-            
-
-           
-
-
-
-
-
-
-
-
-
-
-
-
+            return "";
         }
-        
-        
-
-
-    }   }
+        public string esMayorDeEdad(ClsPersona constructor)
+        {
+            if (constructor.Edad >= 18)
+            {
+                return "Es mayor de Edad";
+            }
+            else
+            {
+                return "Es menor de edad";
+            }
+        }
+    }
+}
